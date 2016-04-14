@@ -94,7 +94,7 @@
                         {
                             "containerPort": 6379,
                             "hostPort": 6379,
-                            "servicePort": 10001,
+                            "servicePort": 10003,
                             "protocol": "tcp"
                         }
                         ],
