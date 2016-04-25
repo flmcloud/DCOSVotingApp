@@ -131,6 +131,14 @@
                         "docker": {
                             "image": "postgres:9.4",
                             "network": "BRIDGE",
+                            "portMappings": [
+                            {
+                                "containerPort": 5432,
+                                "hostPort": 5432,
+                                "servicePort": 10004,
+                                "protocol": "tcp"
+                            }
+                            ],
                             "privileged": false,
                             "parameters": [],
                             "forcePullImage": false
