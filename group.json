@@ -60,7 +60,7 @@
                         "network": "BRIDGE",
                         "portMappings": [
                         {
-                            "containerPort": 80,
+                            "containerPort": 5001,
                             "hostPort": 5001,
                             "servicePort": 10002,
                             "protocol": "tcp"
