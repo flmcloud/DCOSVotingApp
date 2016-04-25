@@ -81,7 +81,7 @@
                     "type": "DOCKER",
                     "volumes": [],
                     "docker": {
-                        "image": "manomarks/worker",
+                        "image": "flmcloud/worker",
                         "network": "BRIDGE",
                         "privileged": false,
                         "parameters": [],
