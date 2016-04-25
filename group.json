@@ -17,7 +17,7 @@
                     "volumes": [
                     {
                         "containerPath": "/app",
-                        "hostPath": "/voting-app",
+                        "hostPath": "./voting-app",
                         "mode": "RW"
                     }  
                     ],
