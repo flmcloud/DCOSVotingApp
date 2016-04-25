@@ -8,6 +8,10 @@
             "id":    "voting-app",
             "cpus":  1,
             "mem":   128,
+            "instances": 1,
+            "acceptedResourceRoles": [
+                "slave_public"
+                ],
             "container": {
                     "type": "DOCKER",
                     "volumes": [
@@ -22,8 +26,8 @@
                         "network": "BRIDGE",
                         "portMappings": [
                         {
-                            "containerPort": 5000,
-                            "hostPort": 80,
+                            "containerPort": 80,
+                            "hostPort": 5000,
                             "servicePort": 10001,
                             "protocol": "tcp"
                         }
@@ -38,6 +42,10 @@
             "id":    "result-app",
             "cpus":  1,
             "mem":   128,
+            "instances": 1,
+            "acceptedResourceRoles": [
+                "slave_public"
+                ],
             "container": {
                     "type": "DOCKER",
                     "volumes": [
@@ -52,8 +60,8 @@
                         "network": "BRIDGE",
                         "portMappings": [
                         {
-                            "containerPort": 5001,
-                            "hostPort": 80,
+                            "containerPort": 80,
+                            "hostPort": 5001,
                             "servicePort": 10002,
                             "protocol": "tcp"
                         }
@@ -68,6 +76,7 @@
             "id":    "worker",
             "cpus":  1,
             "mem":   256,
+            "instances": 1,
             "container": {
                     "type": "DOCKER",
                     "volumes": [],
@@ -84,6 +93,7 @@
             "id":    "redis",
             "cpus":  1,
             "mem":   128,
+            "instances": 1,
             "container": {
                     "type": "DOCKER",
                     "volumes": [],
@@ -108,6 +118,7 @@
             "id":    "db",
             "cpus":  1,
             "mem":   256,
+            "instances": 1,
             "container": {
                         "type": "DOCKER",
                         "volumes": [
