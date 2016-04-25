@@ -13,7 +13,7 @@ option_b = os.getenv('OPTION_B', "Tube")
 
 hostname = socket.gethostname()
 
-redis = connect_to_redis("redis")
+redis = connect_to_redis("redis.all.examplevotingapp.marathon.mesos")
 app = Flask(__name__)
 
 
