@@ -51,7 +51,7 @@
                     "volumes": [
                     {
                         "containerPath": "/app",
-                        "hostPath": "/DCOSVotingApp/result-app",
+                        "hostPath": "/example-voting-app/result-app",
                         "mode": "RW"
                     }
                     ],
